@@ -34,8 +34,8 @@ app.use(express.static(path.join(__dirname, "dist")))
 app.use(express.static(path.join(__dirname, "public")))
 
 
-app.use("/auth", require("./routes/authRoute"))
-app.use("/user", require("./routes/userRoutes"))
+app.use("/api/auth", require("./routes/authRoute"))
+app.use("/api/user", require("./routes/userRoutes"))
 
 
 

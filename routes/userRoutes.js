@@ -4,8 +4,8 @@ const { Protected } = require("../middlewares/auth")
 const router = require("express").Router()
 router
     .post("/register", registerUser)
-    .post("/add-event", Protected, addEvent)
-    .get("/get-event/:date", Protected, getEventData)
+    .post("/add-event", addEvent)
+    .get("/get-event/:date", getEventData)
     .delete("/destroy", destroyUsers)
 
 
